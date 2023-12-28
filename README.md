@@ -1,0 +1,1 @@
+# dynadot-domain-sniper
