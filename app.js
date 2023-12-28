@@ -13,9 +13,6 @@ const accountSid = "YOUR_TWILIO_ACCOUNT_SID";
 const authToken = "YOUR_TWILIO_AUTH_TOKEN";
 const client = new twilio(accountSid, authToken);
 
-// Promisify xml2js
-const parseStringPromise = util.promisify(new xml2js.Parser().parseString);
-
 // Function to send message
 const sendMessage = async (message) => {
   await client.messages.create({
