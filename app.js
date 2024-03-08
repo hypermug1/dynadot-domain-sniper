@@ -25,7 +25,7 @@ const checkAndRegisterDomain = async () => {
     if (searchResult.Available === 'no') {
       console.log(`Domain ${DOMAIN_NAME} is not available :(`);
     } else {
-      const registerResponse = await axios.get(`https://api.dynadot.com/api3.json?key=${API_KEY}&command=register&domain=${DOMAIN_NAME}&currency=EUR&duration=1`);
+      const registerResponse = await axios.get(`https://api.dynadot.com/api3.json?key=${API_KEY}&command=register&domain=${DOMAIN_NAME}&currency=USD&duration=1`);
       const registerResult = registerResponse.data.RegisterResponse;
       
       if (registerResult.ResponseCode === '0' && registerResult.Status === 'success') {
