@@ -4,8 +4,6 @@ const util = require('util');
 // DYNADOT API SHIT 🔥 🤯
 const API_KEY = 'DYNADOT_API_KEY';
 const DOMAIN_NAME = 'DOMAIN_TO_SNIPE'
-
-const DISCORD_ID = 'YOUR_DISCORD_ID'
 // DISCORD SHIT 🔥 🤯
 const discordWebhookUrl = 'DISCORD_WEBHOOK_URL';
 const DISCORD_ID = 'YOUR_DISCORD_ID'
