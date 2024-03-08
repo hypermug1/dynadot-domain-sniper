@@ -35,7 +35,7 @@ const checkAndRegisterDomain = async () => {
         process.exit(); 
       } else {
         console.log(`Failed to register domain ${DOMAIN_NAME}.`);
-        await sendDiscordMessage(`Domain ${DOMAIN_NAME} FAILURE`);
+        await sendDiscordMessage(`Domain ${DOMAIN_NAME} FAILURE :(`);
       }
     }
   } catch (error) {
