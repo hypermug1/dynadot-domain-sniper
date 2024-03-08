@@ -7,7 +7,7 @@ const DOMAIN_NAME = 'DOMAIN_TO_SNIPE'
 
 const DISCORD_ID = 'YOUR_DISCORD_ID'
 // DISCORD SHIT 🔥 🤯
-const discordWebhookUrl = 'DISCORD_WEBHOOK_URL;
+const discordWebhookUrl = 'DISCORD_WEBHOOK_URL';
 const DISCORD_ID = 'YOUR_DISCORD_ID'
 // DISCORD MESSAGE SENDER CONTRAPTION 🔥 🤯
 const sendDiscordMessage = async (content) => {
