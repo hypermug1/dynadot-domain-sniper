@@ -1,20 +1,20 @@
 const axios = require('axios');
 const util = require('util');
 
-// DYNADOT API SHIT 🔥
+// DYNADOT API SHIT 🔥 🤯
 const API_KEY = 'DYNADOT_API_KEY';
 const DOMAIN_NAME = 'DOMAIN_TO_SNIPE'
 
 const DISCORD_ID = 'YOUR_DISCORD_ID'
-// DISCORD SHIT 🔥
+// DISCORD SHIT 🔥 🤯
 const discordWebhookUrl = 'DISCORD_WEBHOOK_URL;
 const DISCORD_ID = 'YOUR_DISCORD_ID'
-// DISCORD MESSAGE SENDER CONTRAPTION 🔥
+// DISCORD MESSAGE SENDER CONTRAPTION 🔥 🤯
 const sendDiscordMessage = async (content) => {
   await axios.post(discordWebhookUrl, { content });
 };
 
-// CAN WE REGISTER? 🔥
+// CAN WE REGISTER? 🔥 🤯
 const checkAndRegisterDomain = async () => {
   try {
     const searchResponse = await axios.get(`https://api.dynadot.com/api3.json?key=${API_KEY}&command=search&domain0=${DOMAIN_NAME}`);
@@ -42,13 +42,13 @@ const checkAndRegisterDomain = async () => {
     console.error(`An error occurred: ${error}`);
   }
 };
-// ARE WE UP?!?! 🔥
+// ARE WE UP?!?! 🔥 🤯
 const serverHealthNotification = async () => {
   console.log('Server up and running');
 };
 
-// HUMP DYNADOT'S LEG EVERY 60 SECONDS 🔥
+// HUMP DYNADOT'S LEG EVERY 60 SECONDS 😩 
 const intervalId = setInterval(checkAndRegisterDomain, 60 * 1000);
 
-// CHECK IF WE UP 🔥
+// CHECK IF WE UP 🔥 🤯
 serverHealthNotification();
